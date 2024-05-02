@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CAD_10ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAD_10ct_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_10_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\US10dollarbill-Series_2004A.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_1ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One_Cent_Tras.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_1_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\US_one_dollar_bill,_obverse,_series_2009.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_1_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAD_1_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_20_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\US_$20_Series_2006_Obverse.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_25ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAD_25ct_COIN.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_2_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAD_2_COIN.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_50ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAD_50ct_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_50_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50_USD_Series_2004_Note_Front.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_5ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Five_Cents_Tras.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAD_5_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\US_$5_Series_2006_obverse.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_100_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\100.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_10ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10_eurocent_common_2007.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_10_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EU10Eurobill-Series_2004A-sharedassets0.assets-1717.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_1ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\germany-1-euro-cent-2002-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_1_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_euro.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_1_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common_face_of_one_euro_coin.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_20ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20_eurocent_common_2007.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_20_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_2_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2_euro_coin_Eu_serie_1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_50ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\605d7123e494b1.61599945-original-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_50_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_5ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\61fe0eecddda17.09298112-original-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EUR_5_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2024-03-29 141218.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_10ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\314_coin-designs-and-specifications_10p-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_10_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d464b6_20763ee15cd64a74ab98c231e25695c2~mv2.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_1ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\th-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_1_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5ea53be3436f91.68585950-original.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_1_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GBP_1_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_20ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\314_coin-designs-and-specifications_20p-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_20_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gbp-20-front.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_2_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s-l1600.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_50ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\314_coin-designs-and-specifications_50p-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_50_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GBP_50_BILL.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_5ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\314_coin-designs-and-specifications_5p-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GBP_5_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\products-15892.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_10ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TS10c.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_10_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sgd10.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_1ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360-original-removebg-preview.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_1_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TS1d.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_20ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TS20c.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_20_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2024-03-31 112554.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_2_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\626c1e69574431.97909339-original.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_50ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TS50c.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_50_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50-singapore-dollars-banknote-president-encik-yusof-bin-ishak-obverse-1.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_5ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TS5c.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SGD_5_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5e981ed7ccc916.18968393-original.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_10ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_10ct_BILL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_10_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_10_BILL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_1ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_1ct_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_1_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_1_BILL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_20_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_20_BILL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_25ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_25ct_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_50ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_50ct_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_50_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_50_BILL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_5ct_COIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_5ct_COIN.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="USD_5_BILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USD_5_BILL.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
