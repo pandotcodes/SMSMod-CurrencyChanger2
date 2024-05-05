@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -55,6 +56,8 @@ namespace CurrencyChanger2
         public static ConfigComp<CoinTextureType> Coin5 { get; set; }
         public static ConfigComp<CoinTextureType> Coin6 { get; set; }
         public static ConfigComp<CoinTextureType> Coin7 { get; set; }
+
+        public static PriceRounder Rounder { get; set; }
         private void Awake()
         {
             StaticLogger = Logger;
@@ -78,6 +81,19 @@ namespace CurrencyChanger2
             Harmony harmony = new Harmony(PluginInfo.PLUGIN_GUID);
             harmony.PatchAll();
 
+            //HarmonyMethod eCommerce = new HarmonyMethod(typeof(Plugin).GetMethod("eCommercePatch"));
+            //if(Assembly.Load("eCommerce") is Assembly assembly)
+            //{
+            //    if(assembly.GetType("eCommerce", false) is Type eCommerceType)
+            //    {
+            //        if(eCommerceType.GetMethod("OnLateUpdate") is MethodInfo method)
+            //        {
+            //            Logger.LogWarning("eCommerce is present - applying patch");
+            //            harmony.Patch(method, postfix: eCommerce);
+            //        }
+            //    }
+            //}
+
             SceneManager.sceneLoaded += (a, b) =>
             {
                 if (SceneManager.GetActiveScene().name == "Main Menu")
@@ -87,7 +103,33 @@ namespace CurrencyChanger2
                     MoneyGeneratorDone = false;
                 }
             };
+
+            Rounder = new PriceRounder(Config);
         }
+        //public static Dictionary<object, List<int>> updatedPrices = new();
+        //public void eCommercePatch(object __instance)
+        //{
+        //    object order = __instance.GetType().GetField("currentOrder").GetValue(__instance);
+        //    //Logger.LogInfo(order == null ? "Order is missing" : "Order was found");
+        //    Dictionary<int, float> ProductsPrices = (Dictionary<int, float>)order.GetType().GetField("ProductsPrices").GetValue(order);
+        //    //Logger.LogInfo(ProductsPrices == null ? "Dictionary is missing" : "Dictionary was found");
+
+        //    foreach(var kvp in ProductsPrices)
+        //    {
+        //        if(updatedPrices.ContainsKey(order))
+        //        {
+        //            if (updatedPrices[order].Contains(kvp.Key))
+        //            {
+        //                continue;
+        //            }
+        //        } else
+        //        {
+        //            updatedPrices.Add(order, new());
+        //        }
+        //        ProductsPrices[kvp.Key] *= CurrencyValueFactor.Value;
+        //        updatedPrices[order].Add(kvp.Key);
+        //    }
+        //}
         private void InitConfig()
         {
             EnableAdditionalCoinCompartments = Config.Bind("Currency Changer", "Enable Additional Coin Compartments", false, "Turns the $1 bill compartment into two coin compartments, 6 and 7, for additional coins.\nThis disables Bill Compartment 1 and enables Coin Compartments 6 and 7.");
@@ -136,7 +178,7 @@ namespace CurrencyChanger2
             Bill1.transform.localPosition = new Vector3(0, -10, 0);
             CheckoutChangeManager ccm = __instance.transform.parent.parent.GetComponent<CheckoutChangeManager>();
             List<MoneyPack> MoneyPacks = ccm.m_MoneyPacks == null ? new() : ccm.m_MoneyPacks.ToList();
-            MoneyPacks.RemoveAll(x => x && x.Value == 1f);
+            MoneyPacks.RemoveAll(x => x && x.gameObject.name == "1 Dollar Pack");
             Bill1 = null;
 
             Money prefab;
@@ -181,7 +223,7 @@ namespace CurrencyChanger2
             if (!MoneyGeneratorDone)
             {
                 List<Money> MoneyPrefabs = Singleton<MoneyGenerator>.Instance.m_MoneyPrefabs == null ? new() : Singleton<MoneyGenerator>.Instance.m_MoneyPrefabs.ToList();
-                MoneyPrefabs.RemoveAll(x => x && x.Value == 1f);
+                MoneyPrefabs.RemoveAll(x => x && x.gameObject.name == "1 Dollar Variant");
                 Coin6Prefab = GameObject.Instantiate(Singleton<MoneyGenerator>.Instance.m_MoneyPrefabs[4].gameObject).GetComponent<Money>();
                 Coin7Prefab = GameObject.Instantiate(Singleton<MoneyGenerator>.Instance.m_MoneyPrefabs[4].gameObject).GetComponent<Money>();
                 ApplyNewRenderers(Coin6Prefab.GetComponent<MeshRenderer>());

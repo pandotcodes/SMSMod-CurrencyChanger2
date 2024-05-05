@@ -35,7 +35,6 @@ namespace CurrencyChanger2.Patches
 
             TextMeshProUGUI Coin6Text = null;
             TextMeshProUGUI Coin7Text = null;
-
             if (!Plugin.MoneyGeneratorDone)
             {
                 Plugin.Bill1.Apply(Singleton<MoneyGenerator>.Instance.m_MoneyPrefabs[5]);
