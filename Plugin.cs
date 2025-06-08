@@ -36,6 +36,7 @@ namespace CurrencyChanger2
         public static ConfigEntry<string> CurrencySuffix { get; set; }
         public static ConfigEntry<string> CurrencyDecimalSeperator { get; set; }
         public static ConfigEntry<float> CurrencyValueFactor { get; set; }
+        public static ConfigEntry<bool> ApplyValueFactorRetroactively { get; set; }
 
 
         public static ConfigEntry<CardTextureType> CreditCardFront { get; set; }
@@ -140,6 +141,7 @@ namespace CurrencyChanger2
             CurrencySuffix = Config.Bind("Currency Settings", "Suffix", "", "The currency symbol (or arbitrary string) to use after the value, where a euro sign might for example be.");
             CurrencyDecimalSeperator = Config.Bind("Currency Settings", "Decimal Seperator", ".", "What symbol to use to seperate the whole number part from the fractional part.");
             CurrencyValueFactor = Config.Bind("Currency Settings", "Value Factor", 1f, "Multiplies all product costs and market prices by the defined number.");
+            ApplyValueFactorRetroactively = Config.Bind("Currency Settings", "Apply Value Factor Retroactively", true, "Whether or not the Value Factor setting should be applied to \"Previous Cost\" in the pricing manager.");
 
             VersionNumber = Config.Bind("Info", "Version", "2.0.0", "What version of the plugin this config file was created under.\nDo NOT change this value, or stuff WILL break.\nIf this value is missing, v1.2.1 will be assumed.");
 

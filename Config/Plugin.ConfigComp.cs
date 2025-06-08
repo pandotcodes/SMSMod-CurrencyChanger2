@@ -54,7 +54,7 @@ namespace CurrencyChanger2
                 var texture = GetTexture();
                 if (texture == null) return this;
                 Plugin.StaticLogger.LogWarning("Applying " + Enum.GetName(typeof(TTexture), Texture.Value) + " texture to " + pack.gameObject.name + " (Money)");
-                foreach (var item1 in pack.GetComponent<MeshRenderer>().sharedMaterials)
+                foreach (var item1 in pack.GetComponentInChildren<MeshRenderer>().sharedMaterials)
                 {
                     item1.mainTexture = texture;
                 }

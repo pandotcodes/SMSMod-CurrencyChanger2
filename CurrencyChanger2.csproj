@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>ChangeCurrency</AssemblyName>
     <Description>My first plugin</Description>
-    <Version>2.2.0</Version>
+    <Version>2.4.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -26,19 +26,34 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Reference Include="Accessibility">
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\Accessibility.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp" Publicize="true">
       <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass" Publicize="true">
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="AYellowpaper.SerializedCollections" Publicize="true">
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\AYellowpaper.SerializedCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanCommon" Publicize="true">
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\LeanCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanPool" Publicize="true">
+      <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\LeanPool.dll</HintPath>
     </Reference>
     <Reference Include="MyBox" Publicize="true">
       <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\MyBox.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Localization">
+    <Reference Include="Unity.Localization" Publicize="true">
       <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\Unity.Localization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
+    <Reference Include="Unity.TextMeshPro" Publicize="true">
       <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
+    <Reference Include="UnityEngine.UI" Publicize="true">
       <HintPath>D:\SteamLibrary\steamapps\common\Supermarket Simulator\Supermarket Simulator_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
